@@ -21,10 +21,12 @@ app.use(cookieParser())
 
 // routes import i.e from locality,user etc....
 import localityRouter from './routes/locality.route.js'
+import userRouter from './routes/user.route.js'
 // import bodyParser from 'body-parser'
 
 
 // routes declaration
 app.use('/api/v1/localities',localityRouter)
+app.use('/api/v1/users', userRouter)
 
 export { app }
